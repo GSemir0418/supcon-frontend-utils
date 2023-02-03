@@ -16,11 +16,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./",
+    "composite": true,
+    "baseUrl": ".",
     "paths": {
       "utils/*": ["src/utils/*"]
     }
   },
-  "include": ["src"],
+  // 要加上tests，否则路径简写不生效
+  "include": ["src", "tests"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -9,5 +9,6 @@ export default defineConfig({
     alias: {
       utils: path.resolve(__dirname, './src/utils/'),
     },
+    extensions: ['.tsx', '.ts', '.js', '.less', 'css'],
   },
 })
