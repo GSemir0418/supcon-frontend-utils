@@ -1,3 +1,1 @@
-export const count = (a: number, b: number) => {
-  return a + b
-}
+export const count = (a: number, b: number) => a + b
